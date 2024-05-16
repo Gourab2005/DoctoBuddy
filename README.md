@@ -1,4 +1,4 @@
-## Doctobuddy: Bringing Calm to the Chaos of Hospital Appointments  ‍♀️
+## 🩺 Doctobuddy: Bringing Calm to the Chaos of Hospital Appointments  ‍♀️
 
 **Tired of the hospital appointment hustle?**  Doctobuddy is here to be your digital sidekick, turning the frustrating into fantastic!  
 
