@@ -15,14 +15,41 @@
 * **Calm & Clear Communication:** Our visual display system eliminates the need for disruptive voice calls, creating a more peaceful environment. 
 * **Budget-Friendly Hero:**  Built using readily available tools, Doctobuddy delivers big impact without breaking the bank. 
 
-**Join the Doctobuddy Revolution!** 
+## Join the Doctobuddy Revolution!
 
 This project is a testament to the power of innovation within Digital India.  Let's work together to make healthcare experiences smoother, less stressful, and more efficient for everyone! 
 
-**Getting Started:**
+## Doctobuddy Tech Stack
 
-(instructions on how to run the project, including any dependencies or setup steps)
+* Frontend: HTML, SCSS, JavaScript, GSAP
+* Backend: Google Apps Script
 
-**Contributing:**
+## Getting Started 👩‍💻
 
-(how others can contribute to the project, if applicable)
+>   ⚠️ Prerequisites
+>
+> - Before getting into it, make sure you have live server installed.
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+
+### Installation
+
+1. Clone the repo
+
+```
+ git clone https://github.com/Gourab2005/DoctoBuddy.git
+```
+
+2. Open the **index.html** file
+
+3. Have fun!
+
+
+## Contributing
+
+We love your enthusiasm for making Doctobuddy even better!  For detailed information on how to contribute code, fixes, or features, please refer to our dedicated contribution guidelines file: **CONTRIBUTING.md** 
+
+This file outlines the process for submitting pull requests, coding conventions, and other helpful tips for becoming a Doctobuddy contributor.
+
