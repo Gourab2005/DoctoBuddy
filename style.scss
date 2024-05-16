@@ -9,12 +9,22 @@
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
-}
-
-section {
     background-color: black;
 }
 
+section {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.heading{
+    font-family: "Bebas Neue", sans-serif;
+    margin: 2rem;
+    padding-left: 3rem;
+    font-size: 3.5rem;
+    color: white;
+    border-bottom: 2px solid gray;
+}
 .section1 {
     display: flex;
     flex-direction: row;
@@ -77,80 +87,58 @@ section {
 }
 
 .section2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .heading{
-        margin-top: 3rem;
-        width: 85%;
-        color: white; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 2rem;
+    .box{
+        background-color: #29282883;
+        border-right: 3px solid rgb(47, 46, 46);
+        border-bottom: 10px solid rgba(62, 61, 61, 0.4);
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 1.5rem;
         text-align: center;
-        font-size: 3.5rem;
-        font-weight: 800;
-        border: 1px  solid rgba(38, 31, 31, 0.668) ;
-        padding: 1.5rem;
-        border-radius: 1.5rem;
-        // background-color: rgba(3, 78, 255, 0.967);
-        border: 1px solid white;
-    }
-    .container{
-        background-color: rgb(25, 25, 25);
-        margin: 2rem;
-        display: flex;
-        flex-direction: row;
-        border-radius: 1.5rem;
-        padding: 2.5rem;
-        .box1{
-            width: 100%;
-            border: 2px solid rgba(255, 255, 255, 0.221);
-            border-radius: 2rem;
-            transition: all .3s ease-in-out;
-            img{
-                height: 100%;
-                width: 100%;
-                border-radius: 2rem;
-            }
+        i{
+            color: white;
+            font-size: 2.5rem;
+            margin: 2rem;
         }
-        .box1:hover{
-            border: 2px solid rgba(0, 34, 255, 0.678);
+        h3{
+            color: white;
+            font-size: 1.5rem;
         }
-        .box2{
-            width: 100%;
-            // border: 2px solid white;
+        p{
+            color: white;
+            font-size: 1rem;
+            text-align: justify;
+            margin: 1rem;
+        }
+        .btn{
+            transition: all .3s ease-out;
+            margin: 1rem;
+            color: white;
+            background-color: rgba(43, 43, 43, 0.278);
+            border: 1px solid rgb(59, 59, 59);
+            padding: 1rem;
+            width: 15rem;
+            border-radius: 1rem;
             text-align: center;
-            .intro{
-                margin: 2rem;
+            font-size: 1rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgba(41, 81, 227, 0.877);
+            margin: 2rem;
+            a{
                 color: white;
-                text-align: center;
             }
-            .button{
-                button{
-                    transition: all .3s ease-out;
-                    margin: 1rem;
-                    color: white;
-                    background-color: rgba(43, 43, 43, 0.278);
-                    border: 1px solid rgb(59, 59, 59);
-                    padding: 1rem;
-                    width: 16rem;
-                    border-radius: 1rem;
-                    text-align: center;
-                    font-size: 1.2rem;
-                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                    background-color: rgba(41, 81, 227, 0.877);
-        
-                    a {
-                        color: white;
-                    }
-                }
-                button:hover{
-                    border: 1px solid white;
-                    background-color: rgb(4, 52, 224);
-                    transform: .5s;
-                }
-            }
+        }
+        .btn:hover {
+            border: 1px solid white;
+            background-color: rgba(4, 52, 224, 0.877);
+            transform: .5s;
         }
     }
 }
+
 .header {
     padding: 2rem 9%;
     position: fixed;
@@ -163,7 +151,8 @@ section {
     justify-content: space-between;
     background: #000000;
     color: white;
-
+    border-bottom: 2px solid rgba(44, 44, 44, 0.384);
+    border-radius: 5rem ;
     .logo {
         color: white;
         font-size: 2rem;
@@ -284,12 +273,6 @@ section {
                 text-align: center;
                 font-size: 2rem;
             }
-        }
-    }
-    .section2{
-        flex-direction: column;
-        .container{
-            flex-direction: column;
         }
     }
 }
