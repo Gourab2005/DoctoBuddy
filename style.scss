@@ -76,6 +76,81 @@ section {
     }
 }
 
+.section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .heading{
+        margin-top: 3rem;
+        width: 85%;
+        color: white; 
+        text-align: center;
+        font-size: 3.5rem;
+        font-weight: 800;
+        border: 1px  solid rgba(38, 31, 31, 0.668) ;
+        padding: 1.5rem;
+        border-radius: 1.5rem;
+        // background-color: rgba(3, 78, 255, 0.967);
+        border: 1px solid white;
+    }
+    .container{
+        background-color: rgb(25, 25, 25);
+        margin: 2rem;
+        display: flex;
+        flex-direction: row;
+        border-radius: 1.5rem;
+        padding: 2.5rem;
+        .box1{
+            width: 100%;
+            border: 2px solid rgba(255, 255, 255, 0.221);
+            border-radius: 2rem;
+            transition: all .3s ease-in-out;
+            img{
+                height: 100%;
+                width: 100%;
+                border-radius: 2rem;
+            }
+        }
+        .box1:hover{
+            border: 2px solid rgba(0, 34, 255, 0.678);
+        }
+        .box2{
+            width: 100%;
+            // border: 2px solid white;
+            text-align: center;
+            .intro{
+                margin: 2rem;
+                color: white;
+                text-align: center;
+            }
+            .button{
+                button{
+                    transition: all .3s ease-out;
+                    margin: 1rem;
+                    color: white;
+                    background-color: rgba(43, 43, 43, 0.278);
+                    border: 1px solid rgb(59, 59, 59);
+                    padding: 1rem;
+                    width: 16rem;
+                    border-radius: 1rem;
+                    text-align: center;
+                    font-size: 1.2rem;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    background-color: rgba(41, 81, 227, 0.877);
+        
+                    a {
+                        color: white;
+                    }
+                }
+                button:hover{
+                    border: 1px solid white;
+                    background-color: rgb(4, 52, 224);
+                    transform: .5s;
+                }
+            }
+        }
+    }
+}
 .header {
     padding: 2rem 9%;
     position: fixed;
@@ -209,6 +284,12 @@ section {
                 text-align: center;
                 font-size: 2rem;
             }
+        }
+    }
+    .section2{
+        flex-direction: column;
+        .container{
+            flex-direction: column;
         }
     }
 }
