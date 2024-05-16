@@ -20,10 +20,13 @@ section {
 .heading{
     font-family: "Bebas Neue", sans-serif;
     margin: 2rem;
-    padding-left: 3rem;
+    padding: 1rem;
+    border-radius: 2rem;
     font-size: 3.5rem;
     color: white;
     border-bottom: 2px solid gray;
+    background-color: #181818;
+    text-align: center;
 }
 .section1 {
     display: flex;
@@ -139,6 +142,38 @@ section {
     }
 }
 
+.section3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 2rem;
+    align-items: center;
+    .image{
+        padding: 7rem;
+        border-radius: 2rem;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .box{
+        border-radius: 2rem;
+        text-align: center;
+        h2{
+            color: white;
+            margin: 2rem;
+            font-size: 2rem;
+        }
+        p{
+            color: white;
+            font-size: 1.5rem;
+            text-align: justify;
+            padding:2rem 2rem;
+            background-color: #323131;
+            margin: 2rem 2rem;
+            border-radius: 1.5rem;
+        }
+    }
+}
 .header {
     padding: 2rem 9%;
     position: fixed;
