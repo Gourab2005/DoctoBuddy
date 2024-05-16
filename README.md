@@ -46,7 +46,6 @@ To get a local copy up and running follow these simple example steps.
 
 3. Have fun!
 
-**Contributing:**
 
 ## Contributing
 
