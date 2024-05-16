@@ -10,6 +10,72 @@ html {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
+section {
+    background-color: black;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+
+    .container1,
+    .container2 {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container1 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        .title {
+            color: white;
+            border-radius: 2rem;
+            border-top: 2px solid white;
+            border-bottom: 2px solid white;
+            font-size: 5rem;
+            padding: 2rem 4rem;
+            font-family: "Bebas Neue", sans-serif;
+            margin: 2rem;
+        }
+    }
+
+    .container2 {
+        display: flex;
+        flex-direction: column;
+
+        .btn {
+            transition: all .3s ease-out;
+            margin: 1rem;
+            color: white;
+            background-color: rgba(43, 43, 43, 0.278);
+            border: 1px solid rgb(59, 59, 59);
+            padding: 1rem;
+            width: 25rem;
+            border-radius: 1rem;
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgba(41, 81, 227, 0.877);
+
+            a {
+                color: white;
+            }
+        }
+
+        .btn:hover {
+            border: 1px solid white;
+            background-color: rgba(4, 52, 224, 0.877);
+            transform: .5s;
+        }
+    }
+}
+
 .header {
     padding: 2rem 9%;
     position: fixed;
@@ -106,5 +172,43 @@ html {
         font-size: 2rem;
         display: block;
         margin: 2.5rem;
+    }
+
+    .section1 {
+        flex-direction: column;
+
+        .container1,
+        .container2 {
+            width: 100%;
+            display: flex;
+        }
+
+        .container1 {
+            justify-content: center;
+            height: 100vw;
+
+            .title {
+                color: white;
+                border-radius: 2rem;
+                border-top: 2px solid white;
+                border-bottom: 2px solid white;
+                font-size: 15vw;
+                padding: 2rem 4rem;
+                font-family: "Bebas Neue", sans-serif;
+                margin: 2rem;
+            }
+        }
+
+        .container2 {
+            flex-direction: column;
+
+            .btn {
+                margin: 1rem;
+                width: 80vw;
+                border-radius: 1rem;
+                text-align: center;
+                font-size: 2rem;
+            }
+        }
     }
 }
