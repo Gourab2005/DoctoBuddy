@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Germania+One&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Teko:wght@300..700&family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+* {
+    text-decoration: none;
+    margin: 0;
+    cursor: pointer;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.header {
+    padding: 2rem 9%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #000000;
+    color: white;
+
+    .logo {
+        color: white;
+        font-size: 2rem;
+        font-family: "Bebas Neue", sans-serif;
+    }
+
+    .navbar {
+        a {
+            font-size: 1.2rem;
+            color:white;
+            margin-left: 2rem;
+            transition: all .3s ease-out;
+        }
+
+        a:hover {
+            transition: all .3s ease-out;
+            color: rgb(165, 162, 162);
+        }
+
+    }
+
+}
+
+#menu-btn {
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    background: #303030;
+    color: white;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+    .section {
+        padding: 2rem;
+    }
+}
+
+@media(max-width:768px){
+    #menu-btn {
+        display: initial;
+    }
+
+    .header {
+        .navbar {
+            position: absolute;
+            top: 115%;
+            right: 2rem;
+            border-radius: .5rem;
+            box-shadow: var(--box-shadow);
+            width: 30rem;
+            border: var(--border);
+            background: #282727;
+            transform: scale(0);
+            opacity: 0;
+            transform-origin: top right;
+            transition: none;
+            color: white;
+        }
+
+        .logo {
+            font-size: 3rem;
+        }
+    }
+    .header .navbar.active {
+        transform: scale(1);
+        opacity: 1;
+        transition: .4s ease-out;
+    }
+
+    .header .navbar a {
+        font-size: 2rem;
+        display: block;
+        margin: 2.5rem;
+    }
+}
