@@ -457,4 +457,37 @@ section {
             }
         }
     }
+
+    .section4{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 2rem;
+        text-align: center;
+        .box{
+            display: flex;
+            flex-direction: column;
+            margin: 2rem;
+            padding: 2rem;
+            border-right: 2px solid rgb(53, 53, 53);
+            border-bottom: 4px solid rgb(53, 53, 53);
+            background-color: #201e1e86;
+            border-radius: 1.5rem;
+        
+            h3{
+                font-size: 2.5rem;
+                // color: white;
+                // font-weight: 800;
+                // margin-top: 1rem;
+            }
+            span{
+                font-size: 2rem;
+            }
+            .share{
+                font-size: 2rem;
+                a{
+                    margin: 0rem 1rem;
+                }
+            }
+        }
+    }
 }
