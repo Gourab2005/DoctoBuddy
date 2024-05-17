@@ -417,4 +417,44 @@ section {
             }
         }
     }
+
+    .footer {
+        .box-container {  
+          .box {
+            h3 {
+              font-size: 2.5rem;
+            }
+            a {
+              font-size: 1.5rem;
+              color: rgb(199, 199, 199);
+            }
+          }
+        }
+    }
+
+    .section5{
+        gap: 10rem;
+        margin: 0rem 6rem;
+        .box{
+            img{
+                height: 60%;
+
+            }
+            h3{
+                font-size: 3rem;
+            }
+            .stars{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1.5rem;
+                text-align: justify;
+                padding: 1rem;
+                background-color: #101010;
+                border-radius: 2rem;
+                border-right: 2px solid rgb(53, 53, 53);
+                border-bottom: 4px solid rgb(53, 53, 53);
+            }
+        }
+    }
 }

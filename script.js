@@ -113,6 +113,13 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         // Animations for section4
+        gsap.to(".section4-box1", {
+            scrollTrigger: ".section4-box2",
+            startAt: { x: -500, opacity: 0 },
+            x: 0,
+            duration: 4,
+            opacity: 1
+        });
         gsap.to(".section4-box2", {
             scrollTrigger: ".section4-box2",
             startAt: { x: -500, opacity: 0 },
