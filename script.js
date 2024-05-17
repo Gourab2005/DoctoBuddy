@@ -72,3 +72,57 @@ gsap.to(".headingentry-section4",{
     duration:1,
     opacity:1
 });
+gsap.to(".reveal-on-scroll",{
+    scrollTrigger: ".reveal-on-scroll",
+    startAt:{x:0,opacity:0},
+    x:0,
+    duration:3,
+    opacity:1
+});
+gsap.to(".reveal-on-scroll-2",{
+    scrollTrigger: ".reveal-on-scroll-1",
+    startAt:{x:0,opacity:0},
+    x:0,
+    duration:4,
+    opacity:1
+});
+// section3
+gsap.to(".section3-box1",{
+    scrollTrigger: ".section3-box1",
+    startAt:{x:-500,opacity:0},
+    x:0,
+    duration:2,
+    opacity:1
+});
+
+//creating problem in menubar in mobile view mode starts
+gsap.to(".section3-box2",{
+    scrollTrigger: ".section3-box2",
+    startAt:{x:+500,opacity:0},
+    x:0,
+    duration:2,
+    opacity:1
+});
+//creating problem in menubar in mobile view mode ends
+// for section 4 
+gsap.to(".section4-box2",{
+    scrollTrigger: ".section4-box2",
+    startAt:{x:-500,opacity:0},
+    x:0,
+    duration:3,
+    opacity:1
+});
+gsap.to(".section4-box3",{
+    scrollTrigger: ".section4-box3",
+    startAt:{x:-500,opacity:0},
+    x:0,
+    duration:2,
+    opacity:1
+});
+gsap.to(".section4-box4",{
+    scrollTrigger: ".section4-box4",
+    startAt:{x:-500,opacity:0},
+    x:0,
+    duration:1,
+    opacity:1
+});
