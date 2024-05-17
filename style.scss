@@ -214,7 +214,70 @@ section {
         }
     }
 }
-
+.section5{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 6rem;
+    text-align: center;
+    margin: 0rem 10rem;
+    .box{
+        img{
+            height: 60%;
+            width: 100%;
+            border-radius: 50%;
+        }
+        h3,.stars,p{
+            color: white;
+        }
+        h3,p{
+            margin: 1rem;
+        }
+        p{
+            text-align: justify;
+            padding: 1rem;
+            background-color: #101010;
+            border-radius: 2rem;
+            border-right: 2px solid rgb(53, 53, 53);
+            border-bottom: 4px solid rgb(53, 53, 53);
+        }
+    }
+}
+/* Designing footer */
+.footer {
+    .box-container {
+      margin-top: 10rem;
+      background-color: #101010;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+      padding-left: 2rem;
+      gap: 2rem;
+  
+      .box {
+        h3 {
+          font-size: 2.5rem;
+          color: white;
+          padding: 1rem 0;
+        }
+  
+        a {
+          display: block;
+          font-size: 1rem;
+          color: white;
+          padding: 1rem 0;
+  
+          &:hover i {
+            padding-right: 2rem;
+          }
+  
+          i {
+            padding-right: 0.5rem;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  
 .header {
     padding: 2rem 9%;
     position: fixed;
@@ -228,7 +291,7 @@ section {
     background: #000000;
     color: white;
     border-bottom: 2px solid rgba(44, 44, 44, 0.384);
-    border-radius: 5rem ;
+    border-radius: 1rem ;
     .logo {
         color: white;
         font-size: 2rem;
@@ -280,7 +343,7 @@ section {
     #menu-btn {
         display: initial;
     }
-
+    
     .header {
         .navbar {
             position: absolute;

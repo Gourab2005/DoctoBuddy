@@ -206,6 +206,61 @@ section {
   color: white;
 }
 
+.section5 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 6rem;
+  text-align: center;
+  margin: 0rem 10rem;
+}
+.section5 .box img {
+  height: 60%;
+  width: 100%;
+  border-radius: 50%;
+}
+.section5 .box h3, .section5 .box .stars, .section5 .box p {
+  color: white;
+}
+.section5 .box h3, .section5 .box p {
+  margin: 1rem;
+}
+.section5 .box p {
+  text-align: justify;
+  padding: 1rem;
+  background-color: #101010;
+  border-radius: 2rem;
+  border-right: 2px solid rgb(53, 53, 53);
+  border-bottom: 4px solid rgb(53, 53, 53);
+}
+
+/* Designing footer */
+.footer .box-container {
+  margin-top: 10rem;
+  background-color: #101010;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  padding-left: 2rem;
+  gap: 2rem;
+}
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  color: white;
+  padding: 1rem 0;
+}
+.footer .box-container .box a {
+  display: block;
+  font-size: 1rem;
+  color: white;
+  padding: 1rem 0;
+}
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+.footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: white;
+}
+
 .header {
   padding: 2rem 9%;
   position: fixed;
@@ -219,7 +274,7 @@ section {
   background: #000000;
   color: white;
   border-bottom: 2px solid rgba(44, 44, 44, 0.384);
-  border-radius: 5rem;
+  border-radius: 1rem;
 }
 .header .logo {
   color: white;
